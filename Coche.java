@@ -166,18 +166,4 @@ public class Coche {
             this.numPlazas = numPlazas;
         }
     }
-
-    @Override
-    public String toString() {
-        String tieneTechoSolar = techoSolar ? "Tiene techo solar" : "No tiene techo solar";
-        return "Matricula: " + matricula + "\n" +
-                "Marca: " + marca + "\n" +
-                "Modelo: " + modelo + "\n" +
-                "Color: " + color + "\n" +
-                tieneTechoSolar + "\n" +
-                "Kilometros: " + kilometros + "\n" +
-                "Numero de puertas: " + numPuertas + "\n" +
-                "Numero de plazas: " + numPlazas;
-
-    }
 }

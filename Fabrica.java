@@ -56,7 +56,15 @@ public class Fabrica {
     }
 
     public static String caracteristicas(Coche c) {
-        return c.toString();
+        String techoSolar = c.isTechoSolar() ? "Tiene techo solar" : "No tiene techo solar";
+        return "Matricula " + c.getMatricula() + "\n" +
+                "Marca: "+ c.getMarca() + "\n" +
+                "Modelo: " + c.getModelo() + "\n" +
+                "Color: " + c.getColor() + "\n" +
+                techoSolar + "\n" +
+                "Kilometros: " + c.getKilometros() + "\n" +
+                "Numero de puertas: " + c.getNumPuertas() + "\n" +
+                "Numero de plazas: " + c.getNumPlazas() + "\n";
 
     }
 }
