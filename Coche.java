@@ -160,7 +160,7 @@ public class Coche {
     }
 
     public void setNumPlazas(int numPlazas) {
-        if (numPlazas <= 0) {
+        if (numPlazas <= 0 || numPlazas > 7) {
             JOptionPane.showMessageDialog(null , "El coche no puede tener un numero de plazas negativos.");
         } else {
             this.numPlazas = numPlazas;
